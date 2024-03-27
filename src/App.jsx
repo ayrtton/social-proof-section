@@ -1,9 +1,12 @@
 import './assets/css/main.css';
+import Footer from './components/Footer';
+import Main from './components/Main';
 
 function App() {
     return (
         <>
-            <h1>Hello World</h1>
+            <Main/>
+            <Footer/>
         </>
     );
 }
