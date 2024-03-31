@@ -1,1 +1,44 @@
 @import './config';
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+main {
+    height: 100vh;
+    padding: 10vh 10vw;
+
+    .service-presentation {
+        display: flex;
+        height: 50%;
+
+        &__text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            &-title {
+                width: 70%;
+                color: $very_dark_magenta;
+                font-size: clamp(2.5rem, 3.5vw, 6.5rem);
+            }
+
+            &-content {
+                width: 85%;
+                color: $dark_grayish_magenta;
+                line-height: 3.2vh;
+                font-size: clamp(1.2rem, 1.2vw, 2.3rem);
+            }
+        }
+
+        &__rating {
+            width: 50%;
+        }
+    }
+
+    .service-reviews {
+        display: flex;
+        height: 50%;
+    }
+}
