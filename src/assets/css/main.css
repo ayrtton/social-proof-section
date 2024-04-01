@@ -29,13 +29,50 @@ main .service-presentation__text-title {
   font-size: clamp(2.5rem, 3.5vw, 6.5rem);
 }
 main .service-presentation__text-content {
-  width: 85%;
+  width: 75%;
   color: hsl(303, 10%, 53%);
   line-height: 3.2vh;
-  font-size: clamp(1.2rem, 1.2vw, 2.3rem);
+  font-size: clamp(1rem, 1.2vw, 2.3rem);
+  font-weight: 500;
 }
 main .service-presentation__rating {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+main .service-presentation__rating * {
+  background-color: hsl(300, 24%, 96%);
+  width: 80%;
+  height: 20%;
+  font-size: clamp(1rem, 1.2vw, 2.3rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 0.6vw;
+}
+main .service-presentation__rating-2 {
+  align-self: center;
+}
+main .service-presentation__rating-3 {
+  align-self: flex-end;
+}
+main .service-presentation__rating-stars {
+  height: 100%;
+  width: 55%;
+  justify-content: center;
+  gap: 0.5vw;
+}
+main .service-presentation__rating-stars img {
+  height: 30%;
+  width: auto;
+}
+main .service-presentation__rating-text {
+  height: 100%;
+  justify-content: left;
+  padding-top: 0.5vh;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
 }
 main .service-reviews {
   display: flex;

@@ -1,3 +1,4 @@
+import star from '../assets/images/icon-star.svg';
 import anne from '../assets/images/image-anne.jpg';
 import colton from '../assets/images/image-colton.jpg';
 import irene from '../assets/images/image-irene.jpg';
@@ -13,9 +14,33 @@ function Main() {
                     services.</p>
                 </div>
                 <div className="service-presentation__rating">
-                    <div className="service-presentation__rating-1">Rated 5 Stars in Reviews</div>
-                    <div className="service-presentation__rating-2">Rated 5 Stars in Report Guru</div>
-                    <div className="service-presentation__rating-3">Rated 5 Stars in BestTech</div>
+                    <div className="service-presentation__rating-1">
+                        <div className="service-presentation__rating-stars">
+                            <img src={star} alt="" /><img src={star} alt="" /><img src={star} alt="" />
+                            <img src={star} alt="" /><img src={star} alt="" />
+                        </div>
+                        <div className="service-presentation__rating-text">
+                            Rated 5 Stars in Reviews
+                        </div>
+                    </div>
+                    <div className="service-presentation__rating-2">
+                        <div className="service-presentation__rating-stars">
+                            <img src={star} alt="" /><img src={star} alt="" /><img src={star} alt="" />
+                            <img src={star} alt="" /><img src={star} alt="" />
+                        </div>
+                        <div className="service-presentation__rating-text">
+                            Rated 5 Stars in Report Guru
+                        </div>
+                    </div>
+                    <div className="service-presentation__rating-3">
+                        <div className="service-presentation__rating-stars">
+                            <img src={star} alt="" /><img src={star} alt="" /><img src={star} alt="" />
+                            <img src={star} alt="" /><img src={star} alt="" />
+                        </div>
+                        <div className="service-presentation__rating-text">
+                                Rated 5 Stars in BestTech
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="service-reviews">
