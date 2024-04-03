@@ -47,32 +47,38 @@ function Main() {
                 <div className="reviewer">
                     <div className="reviewer__profile">
                         <img className="reviewer__profile-image" src={colton} alt="Colton image" />
-                        <h2 className="reviewer__profile-name">Colton Smith</h2>
-                        <span className="reviewer__profile-description">Verified Buyer</span>
+                        <div className="reviewer__profile-info">
+                            <h2 className="reviewer__profile-name">Colton Smith</h2>
+                            <span className="reviewer__profile-description">Verified Buyer</span>
+                        </div>
                     </div>
-                    <p className="reviewer__text">{'"'}We needed the same printed design as the one we had 
+                    <p className="reviewer__text">{'"'} We needed the same printed design as the one we had 
                     ordered a week prior. Not only did they find the original order, but we also received 
-                    it in time.Excellent!{'"'}</p>
+                    it in time. Excellent! {'"'}</p>
                 </div>
                 <div className="reviewer">
                     <div className="reviewer__profile">
                         <img className="reviewer__profile-image" src={irene} alt="Irene image" />
-                        <h2 className="reviewer__profile-name">Irene Roberts</h2>
-                        <span className="reviewer__profile-description">Verified Buyer</span>
+                        <div className="reviewer__profile-info">
+                            <h2 className="reviewer__profile-name">Irene Roberts</h2>
+                            <span className="reviewer__profile-description">Verified Buyer</span>
+                        </div>
                     </div>
-                    <p className="reviewer__text">{'"'}Customer service is always excellent and very quick 
+                    <p className="reviewer__text">{'"'} Customer service is always excellent and very quick 
                     turn around. Completely delighted with the simplicity of the purchase and the speed of 
-                    delivery.{'"'}</p>
+                    delivery. {'"'}</p>
                 </div>
                 <div className="reviewer">
                     <div className="reviewer__profile">
                         <img className="reviewer__profile-image" src={anne} alt="Anne image" />
-                        <h2 className="reviewer__profile-name">Anne Wallace</h2>
-                        <span className="reviewer__profile-description">Verified Buyer</span>
+                        <div className="reviewer__profile-info">
+                            <h2 className="reviewer__profile-name">Anne Wallace</h2>
+                            <span className="reviewer__profile-description">Verified Buyer</span>
+                        </div>
                     </div>
-                    <p className="reviewer__text">{'"'}Put an order with this company and can only praise 
+                    <p className="reviewer__text">{'"'} Put an order with this company and can only praise 
                     them for the very high standard. Will definitely use them again and recommend them to 
-                    8everyone!{'"'}</p>
+                    everyone! {'"'}</p>
                 </div>
             </div>
         </main>
