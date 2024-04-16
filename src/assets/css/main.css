@@ -5,6 +5,111 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 1000px) {
+  body main {
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vh 0 5vh;
+  }
+  body main .service-presentation {
+    display: flex;
+    height: auto;
+    width: min(600px, 100%);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: normal;
+  }
+  body main .service-presentation__text {
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+  body main .service-presentation__text-content {
+    width: min(450px, 90%);
+    font-size: 1.1rem;
+    margin: 3vh 0 4vh 0;
+    line-height: 140%;
+  }
+  body main .service-presentation__ratings {
+    width: 100%;
+    gap: 3vh;
+  }
+  body main .service-presentation__rating {
+    display: flex;
+    height: 70px;
+    width: min(450px, 90%);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center !important;
+    border-radius: 1.4vh;
+    padding: 1vh 0;
+  }
+  body main .service-presentation__rating-stars {
+    width: 50%;
+    gap: 1vw;
+  }
+  body main .service-presentation__rating-stars img {
+    height: 55%;
+  }
+  body main .service-presentation__rating-text {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  body main .service-reviews {
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: normal;
+    margin: 6vh 0 0 0;
+    gap: 3vh;
+  }
+  body main .service-reviews .reviewer {
+    display: flex;
+    height: 240px;
+    width: min(450px, 90%);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: normal;
+    align-self: center !important;
+    border-radius: 1.4vh;
+    padding: 4vh;
+  }
+  body main .service-reviews .reviewer__profile {
+    gap: 2.5vh;
+  }
+  body main .service-reviews .reviewer__profile-image {
+    height: 90%;
+    align-self: center;
+  }
+  body main .service-reviews .reviewer__profile-name, body main .service-reviews .reviewer__profile-description {
+    font-size: 1.1rem;
+  }
+  body main .service-reviews .reviewer__text {
+    line-height: 140%;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 360px) {
+  body main .service-reviews .reviewer__text {
+    line-height: 120%;
+  }
+}
 body {
   font-family: "League Spartan", sans-serif;
 }
@@ -14,9 +119,8 @@ main {
   height: 100vh;
   width: auto;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: normal;
   justify-content: space-between;
+  align-items: normal;
   padding: 10vh 10vw;
 }
 main .service-presentation {
@@ -43,11 +147,11 @@ main .service-presentation__text-title {
 main .service-presentation__text-content {
   width: 75%;
   color: hsl(303, 10%, 53%);
-  line-height: 3.2vh;
-  font-size: clamp(1rem, 1.2vw, 2.3rem);
+  line-height: 120%;
+  font-size: clamp(0.85rem, 1.2vw, 2.3rem);
   font-weight: 500;
 }
-main .service-presentation__rating {
+main .service-presentation__ratings {
   display: flex;
   height: auto;
   width: 50%;
@@ -55,7 +159,7 @@ main .service-presentation__rating {
   justify-content: space-evenly;
   align-items: normal;
 }
-main .service-presentation__rating * {
+main .service-presentation__rating {
   display: flex;
   height: 20%;
   width: 80%;
@@ -63,28 +167,35 @@ main .service-presentation__rating * {
   justify-content: space-evenly;
   align-items: center;
   background-color: hsl(300, 24%, 96%);
-  font-size: clamp(1rem, 1.2vw, 2.3rem);
+  font-size: clamp(0.85rem, 1.2vw, 2.3rem);
   border-radius: 0.6vw;
 }
-main .service-presentation__rating-2 {
+main .service-presentation__rating:nth-child(2) {
   align-self: center;
 }
-main .service-presentation__rating-3 {
+main .service-presentation__rating:nth-child(3) {
   align-self: flex-end;
 }
 main .service-presentation__rating-stars {
+  display: flex;
   height: 100%;
-  width: 55%;
+  width: 40%;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   gap: 0.5vw;
 }
 main .service-presentation__rating-stars img {
-  height: 30%;
+  height: 25%;
   width: auto;
 }
 main .service-presentation__rating-text {
+  display: flex;
   height: 100%;
+  width: 60%;
+  flex-direction: row;
   justify-content: left;
+  align-items: center;
   padding-top: 0.5vh;
   font-weight: 700;
   color: hsl(300, 43%, 22%);
@@ -120,8 +231,9 @@ main .service-reviews .reviewer__profile {
   height: 30%;
   width: auto;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: normal;
+  gap: 1.4vw;
 }
 main .service-reviews .reviewer__profile-image {
   border-radius: 50%;
@@ -129,13 +241,13 @@ main .service-reviews .reviewer__profile-image {
 main .service-reviews .reviewer__profile-info {
   display: flex;
   height: auto;
-  width: 80%;
+  width: auto;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: normal;
 }
 main .service-reviews .reviewer__profile-name, main .service-reviews .reviewer__profile-description {
-  font-size: clamp(1rem, 1.2vw, 2.3rem);
+  font-size: clamp(0.85rem, 1.2vw, 2.3rem);
   font-weight: 500;
 }
 main .service-reviews .reviewer__profile-description {
@@ -143,5 +255,5 @@ main .service-reviews .reviewer__profile-description {
 }
 main .service-reviews .reviewer__text {
   line-height: 125%;
-  font-size: clamp(1rem, 1.2vw, 2.3rem);
+  font-size: clamp(0.85rem, 1.2vw, 2.3rem);
 }/*# sourceMappingURL=main.css.map */

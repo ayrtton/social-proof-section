@@ -1,0 +1,91 @@
+@media (max-width: 1000px) {
+    body main {
+        @include flexbox(auto, auto, column, space-between, center);
+        padding: 10vh 0 5vh;
+
+        .service-presentation {
+            @include flexbox(auto, min(600px, 100%), column);
+
+            &__text {
+                @include flexbox(auto, 100%, column, space-evenly, center);
+                text-align: center;
+
+                &-content {
+                    width: min(450px, 90%);
+                    font-size: 1.1rem;
+                    margin: 3vh 0 4vh 0;
+                    line-height: 140%;
+                }
+            }
+
+            &__ratings {
+                width: 100%;
+                gap: 3vh;
+            }
+
+            &__rating {
+                @include flexbox(70px, min(450px, 90%), column, space-evenly, center);
+                align-self: center !important;
+                border-radius: 1.4vh;
+                padding: 1vh 0;
+
+                &-stars {
+                    width: 50%;
+                    gap: 1vw;
+
+                    img {
+                        height: 55%;
+                    }
+                }
+
+                &-text {
+                    @include flexbox(100%, 100%, row, center, center);
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .service-reviews {
+            @include flexbox(auto, auto, column);
+            margin: 6vh 0 0 0;
+            gap: 3vh;
+
+            .reviewer {
+                @include flexbox(240px, min(450px, 90%), column, space-between);
+                align-self: center !important;
+                border-radius: 1.4vh;
+                padding: 4vh;
+
+                &__profile {
+                    gap: 2.5vh;
+
+                    &-image {
+                        height: 90%;
+                        align-self: center;
+                    }
+
+                    &-name, &-description {
+                        font-size: 1.1rem;
+                    }
+                }
+
+                &__text {
+                    line-height: 140%;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    body main {
+        .service-reviews {
+            .reviewer {
+                &__text {
+                    line-height: 120%;
+                }
+            }
+        }
+    }
+}

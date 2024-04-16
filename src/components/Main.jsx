@@ -13,8 +13,8 @@ function Main() {
                     excellent customer service. See what our satisfied customers are saying about our 
                     services.</p>
                 </div>
-                <div className="service-presentation__rating">
-                    <div className="service-presentation__rating-1">
+                <div className="service-presentation__ratings">
+                    <div className="service-presentation__rating">
                         <div className="service-presentation__rating-stars">
                             <img src={star} alt="" /><img src={star} alt="" /><img src={star} alt="" />
                             <img src={star} alt="" /><img src={star} alt="" />
@@ -23,7 +23,7 @@ function Main() {
                             Rated 5 Stars in Reviews
                         </div>
                     </div>
-                    <div className="service-presentation__rating-2">
+                    <div className="service-presentation__rating">
                         <div className="service-presentation__rating-stars">
                             <img src={star} alt="" /><img src={star} alt="" /><img src={star} alt="" />
                             <img src={star} alt="" /><img src={star} alt="" />
@@ -32,7 +32,7 @@ function Main() {
                             Rated 5 Stars in Report Guru
                         </div>
                     </div>
-                    <div className="service-presentation__rating-3">
+                    <div className="service-presentation__rating">
                         <div className="service-presentation__rating-stars">
                             <img src={star} alt="" /><img src={star} alt="" /><img src={star} alt="" />
                             <img src={star} alt="" /><img src={star} alt="" />

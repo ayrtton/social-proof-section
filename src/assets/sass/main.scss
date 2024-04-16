@@ -1,12 +1,11 @@
-@import './config', './mixins';
+@import './config', './mixins', './media-queries';
 
 body {
     font-family: 'League Spartan', sans-serif;
 }
 
 main {
-    @include flexbox(100vh, auto, column);
-    justify-content: space-between;
+    @include flexbox(100vh, auto, column, space-between);
     padding: 10vh 10vw;
 
     .service-presentation {
@@ -24,45 +23,42 @@ main {
             &-content {
                 width: 75%;
                 color: $dark_grayish_magenta;
-                line-height: 3.2vh;
+                line-height: 120%;
                 font-size: $p_font_size;
                 font-weight: $font_weight_02;
             }
         }
 
-        &__rating {
+        &__ratings {
             @include flexbox(auto, 50%, column, space-evenly);
+        }
 
-            * {
-                @include flexbox(20%, 80%, row, space-evenly, center);
-                background-color: $light_grayish_magenta;
-                font-size: $p_font_size;
-                border-radius: $default_border_radius;
-            }
+        &__rating {
+            @include flexbox(20%, 80%, row, space-evenly, center);
+            background-color: $light_grayish_magenta;
+            font-size: $p_font_size;
+            border-radius: $default_border_radius;
 
-            &-2 {
+            &:nth-child(2) {
                 align-self: center;
             }
 
-            &-3 {
+            &:nth-child(3) {
                 align-self: flex-end;
             }
 
             &-stars {
-                height: 100%;
-                width: 55%;
-                justify-content: center;
+                @include flexbox(100%, 40%, row, center, center);
                 gap: .5vw;
     
                 img {
-                    height: 30%;
+                    height: 25%;
                     width: auto;
                 }
             }
 
             &-text {
-                height: 100%;
-                justify-content: left;
+                @include flexbox(100%, 60%, row, left, center);
                 padding-top: .5vh;
                 font-weight: $font_weight_03;
                 color: $very_dark_magenta;
@@ -89,14 +85,15 @@ main {
             }
 
             &__profile {
-                @include flexbox(30%, auto, row, space-between);
+                @include flexbox(30%, auto, row);
+                gap: 1.4vw;
 
                 &-image {
                     border-radius: 50%;
                 }
 
                 &-info {
-                    @include flexbox(auto, 80%, column, space-evenly);
+                    @include flexbox(auto, auto, column, space-evenly);
                 }
 
                 &-name, &-description {
@@ -116,3 +113,4 @@ main {
         }
     }
 }
+
