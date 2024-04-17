@@ -114,3 +114,22 @@ main {
     }
 }
 
+footer {
+    .attribution {
+        @include flexbox(12vh, 100%, column, center, center);
+        font-size: $p_font_size;
+        gap: 1vh;
+        text-align: center;
+        background-image: linear-gradient($white, $light_grayish_magenta);
+
+        &__link {
+            text-decoration: none;
+            transition: .5s;
+            color: $very_dark_magenta;
+    
+            &:hover {
+                color: $soft_pink;
+            }
+        }
+    }
+}

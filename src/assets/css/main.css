@@ -256,4 +256,25 @@ main .service-reviews .reviewer__profile-description {
 main .service-reviews .reviewer__text {
   line-height: 125%;
   font-size: clamp(0.85rem, 1.2vw, 2.3rem);
+}
+
+footer .attribution {
+  display: flex;
+  height: 12vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(0.85rem, 1.2vw, 2.3rem);
+  gap: 1vh;
+  text-align: center;
+  background-image: linear-gradient(hsl(0, 0%, 100%), hsl(300, 24%, 96%));
+}
+footer .attribution__link {
+  text-decoration: none;
+  transition: 0.5s;
+  color: hsl(300, 43%, 22%);
+}
+footer .attribution__link:hover {
+  color: hsl(333, 80%, 67%);
 }/*# sourceMappingURL=main.css.map */
