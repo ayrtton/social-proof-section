@@ -192,8 +192,9 @@ main .service-presentation__ratings {
   height: auto;
   width: 50%;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: normal;
+  gap: 2vh;
 }
 main .service-presentation__rating {
   display: flex;

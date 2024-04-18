@@ -30,7 +30,8 @@ main {
         }
 
         &__ratings {
-            @include flexbox(auto, 50%, column, space-evenly);
+            @include flexbox(auto, 50%, column, center);
+            gap: 2vh;
         }
 
         &__rating {
