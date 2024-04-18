@@ -7,3 +7,13 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
+
+@mixin background-pattern($width: auto) {
+    width: $width;
+    position: fixed;
+    z-index: -1;
+        
+    img {
+        width: 100%;
+    }
+}

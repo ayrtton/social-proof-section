@@ -120,7 +120,6 @@ footer {
         font-size: $p_font_size;
         gap: 1vh;
         text-align: center;
-        background-image: linear-gradient($white, $light_grayish_magenta);
 
         &__link {
             text-decoration: none;
@@ -132,4 +131,21 @@ footer {
             }
         }
     }
+}
+
+.desktop-background {
+    &__pattern-top {
+        @include background-pattern(35%);
+        top: 0;
+    }
+
+    &__pattern-bottom {
+        @include background-pattern(70%);
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.mobile-background {
+    display: none;
 }

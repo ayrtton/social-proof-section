@@ -104,6 +104,42 @@
     line-height: 140%;
     font-size: 1.1rem;
   }
+  body .desktop-background__pattern-top {
+    width: 70%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+  }
+  body .desktop-background__pattern-top img {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  body .mobile-background {
+    display: block;
+  }
+  body .mobile-background__pattern-top {
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+  }
+  body .mobile-background__pattern-top img {
+    width: 100%;
+  }
+  body .mobile-background__pattern-bottom {
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+  }
+  body .mobile-background__pattern-bottom img {
+    width: 100%;
+  }
+  body .desktop-background {
+    display: none;
+  }
 }
 @media (max-width: 360px) {
   body main .service-reviews .reviewer__text {
@@ -268,7 +304,6 @@ footer .attribution {
   font-size: clamp(0.85rem, 1.2vw, 2.3rem);
   gap: 1vh;
   text-align: center;
-  background-image: linear-gradient(hsl(0, 0%, 100%), hsl(300, 24%, 96%));
 }
 footer .attribution__link {
   text-decoration: none;
@@ -277,4 +312,28 @@ footer .attribution__link {
 }
 footer .attribution__link:hover {
   color: hsl(333, 80%, 67%);
+}
+
+.desktop-background__pattern-top {
+  width: 35%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+}
+.desktop-background__pattern-top img {
+  width: 100%;
+}
+.desktop-background__pattern-bottom {
+  width: 70%;
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+}
+.desktop-background__pattern-bottom img {
+  width: 100%;
+}
+
+.mobile-background {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
